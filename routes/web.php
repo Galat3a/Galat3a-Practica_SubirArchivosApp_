@@ -1,11 +1,11 @@
 <?php
 
-// import de jave
-
-use App\Http\Controllers\SubirControlados;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FileController;
 
-Route::get('/', [SubirControlador::clase, 'index'])->name('subir.index');
-Route::post('subir', [SubirControlador::clase, 'subir'])->name('subir.subir');
-Route::get('view', [SubirControlador::clase, 'view'])->name('subir.view');//ruta/ metodo / y nombre de la ruta para usarlo en la programacion del controller...etc
-Route::get('img{file}', [SubirControlador::clase, 'img'])->name('subir.img');
+Route::get('/', [FileController::class, 'index'])->name('files.index');
+Route::get('/create', [FileController::class, 'create'])->name('files.create');
+Route::resource('files', FileController::class);
+Route::post('/files', [FileController::class, 'store'])->name('files.store');
+Route::get('name/{file}', [FileController::class, 'show'])->name('files.show');
+Route::get('img/{id}', [FileController::class, 'img'])->name('files.img');
