@@ -6,11 +6,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Upload File App')</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('upload.index') }}">Files Uploader</a>
+            
+            <a  href="{{ route('upload.index') }}" style="background-color: #1b5e20; color: white; padding: 10px 20px; border-radius: 5px;">ImageBox</a>
         </div>
     </nav>
 
@@ -36,5 +38,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    @yield('scripts')
 </body>
 </html>

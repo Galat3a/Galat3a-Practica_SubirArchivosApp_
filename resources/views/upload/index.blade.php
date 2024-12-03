@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="container mt-5">
-        <h1 class="mb-4">All Files</h1>
-        <table class="table table-striped">
-            <thead class="thead-dark">
+        <h1 class="mb-4">Todos los Archivos</h1>
+        <table id="filesTable" class="table table-striped">
+            <thead style="background-color: #1b5e20; color: white;">
                 <tr>
                     <th>Image Preview</th>
                     <th>ID</th>
@@ -12,6 +12,7 @@
                     <th>Storage Name</th>
                     <th>Created At</th>
                     <th>Updated At</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,10 +32,25 @@
                         <td>{{ $file->storage_name }}</td>
                         <td>{{ $file->created_at->format('Y-m-d H:i:s') }}</td>
                         <td>{{ $file->updated_at->format('Y-m-d H:i:s') }}</td>
+                        <td>
+                            <a href="#" data-href="{{ route('upload.destroy', $file->id) }}" class="borrar text-danger">
+                                Delete
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        
+        <form id="formDelete" action="{{ url('') }}" method="POST">
+            @csrf
+            @method('DELETE')
+        </form>
+        
         <a href="{{ route('upload.create') }}" class="btn btn-success mt-3">Upload File</a>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('assets/scripts/script.js') }}"></script>
 @endsection
