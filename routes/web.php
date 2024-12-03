@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FileController;
 
-Route::get('/', [FileController::class, 'index'])->name('files.index');
-Route::get('/create', [FileController::class, 'create'])->name('files.create');
-Route::resource('files', FileController::class);
-Route::post('/files', [FileController::class, 'store'])->name('files.store');
-Route::get('name/{file}', [FileController::class, 'show'])->name('files.show');
-Route::get('img/{id}', [FileController::class, 'img'])->name('files.img');
+Route::get('/', [UploadController::class, 'index'])->name('upload.index'); // View all
+Route::get('/create', [UploadController::class, 'create'])->name('upload.create'); // Form upload
+Route::post('/upload', [UploadController::class, 'store'])->name('upload.store'); // Store
+Route::get('image/{id}', [UploadController::class, 'image'])->name('upload.image');
+Route::get('show/{file}', [UploadController::class, 'show'])->name('upload.show');

@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('files', function (Blueprint $table) {
+        Schema::create('upload', function (Blueprint $table) {
             $table->id();
             $table->string('original_name');
-            $table->string('stored_name');
-            $table->timestamp('uploaded_at');
-            $table->timestamps();
+            $table->string('storage_name')->unique();
+            $table->timestamps();  // This will create both created_at and updated_at columns
         });
     }
 
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('files');
+        Schema::dropIfExists('upload');
     }
 };

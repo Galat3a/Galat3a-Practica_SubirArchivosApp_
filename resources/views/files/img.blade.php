@@ -1,1 +1,0 @@
-<img src="{{ url('img/{id}') }}" alt="">
