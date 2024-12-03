@@ -26,5 +26,5 @@ Este es un proyecto web desarrollado con **Laravel** que permite a los usuarios 
 1. **Clona el repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+
    cd tu-repositorio
