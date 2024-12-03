@@ -34,9 +34,9 @@ class UploadController extends Controller {
         try {
             $path = Storage::putFileAs('/exercise', $file, $storageName);
             
-            if (!$path) {
-                throw new \Exception('Error saving file');
-            }
+            //if (!$path) {
+               // throw new \Exception('Error saving file');
+            //}
 
             // Create database record
             $upload = Upload::create([
