@@ -22,16 +22,16 @@ Node.js y NPM (opcional, solo necesario para gestionar assets)
 
 ## 🚀 Instalación
 
-** 1. Instalar dependencias de PHP: **
+**1. Instalar dependencias de PHP:**
 ```bash
 composer install
 ```
-** 2. Configurar el entorno: **
+**2. Configurar el entorno:**
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
-** 3. Configurar la base de datos: **
+**3. Configurar la base de datos:**
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -40,13 +40,13 @@ DB_DATABASE=archivosSubidos
 DB_USERNAME=user_subir
 DB_PASSWORD=root
 ```
-** 4. Ejecutar migraciones: **
+**4. Ejecutar migraciones:**
 ```bash
 php artisan migrate
 ```
 **📝 Características**
 
-** Subida de imágenes fácil y rápida. **
+**Subida de imágenes fácil y rápida.**
 
 Almacenamiento seguro de archivos.
 Visualización de imágenes por ID único o nombre de archivo.
@@ -61,6 +61,7 @@ http://18.232.80.41/laraveles/subit-archivosApp/public/
 Usa el formulario de subida para añadir imágenes.
 
 Rutas disponibles:
+
 ```bash
 Route::get('/', [UploadController::class, 'index'])->name('upload.index');
 Route::get('/create', [UploadController::class, 'create'])->name('upload.create');
@@ -72,5 +73,9 @@ Route::delete('delete/{id}', [UploadController::class, 'destroy'])->name('upload
 
 ## Capturas de pantalla:
 
-<img src="./capturas/1.png" alt="Imagen">
-
+<img src="./captura/1.png" alt="Imagen">
+<img src="./captura/2.png" alt="Imagen">
+<img src="./captura/3.png" alt="Imagen">
+<img src="./captura/4.png" alt="Imagen">
+<img src="./captura/5.png" alt="Imagen">
+<img src="./captura/6.png" alt="Imagen">
