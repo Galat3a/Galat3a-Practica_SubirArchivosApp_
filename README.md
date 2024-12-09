@@ -79,6 +79,14 @@ Route::get('show/{file}', [UploadController::class, 'show'])->name('upload.show'
 Route::delete('delete/{id}', [UploadController::class, 'destroy'])->name('upload.destroy');
 ```
 
+Vistas
+```bash
+base.blade.php: Main layout template
+upload/create.blade.php: Formulario de subida
+upload/index.blade.php: Lista de archivos subidos
+upload/show.blade.php: Vista individual
+```bash
+
 ## Capturas de pantalla:
 
 <img src="./captura/1.png" alt="Imagen">
