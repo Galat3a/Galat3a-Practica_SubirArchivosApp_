@@ -1,13 +1,12 @@
 Sistema de Gestión de Imágenes - Laravel
 
-**📋 Descripción**
+## 📋 Descripción
 
 Aplicación web desarrollada con Laravel para la gestión y visualización de imágenes. Ofrece dos métodos de acceso para obtener imágenes:
 
 Acceso por ID único
 Acceso por nombre de archivo
-
-**🛠️ Tecnologías Utilizadas**
+## 🛠️ Tecnologías Utilizadas
 
 Framework: Laravel 11.x
 Lenguaje: PHP 8.2
@@ -21,18 +20,18 @@ Composer
 MySQL/MariaDB
 Node.js y NPM (opcional, solo necesario para gestionar assets)
 
-**🚀 Instalación**
+## 🚀 Instalación
 
-## 1. Instalar dependencias de PHP:
+** 1. Instalar dependencias de PHP: **
 ```bash
 composer install
 ```
-## 2. Configurar el entorno:
+** 2. Configurar el entorno: **
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
-## 3. Configurar la base de datos:
+** 3. Configurar la base de datos: **
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -41,19 +40,19 @@ DB_DATABASE=archivosSubidos
 DB_USERNAME=user_subir
 DB_PASSWORD=root
 ```
-## 4. Ejecutar migraciones:
+** 4. Ejecutar migraciones: **
 ```bash
 php artisan migrate
 ```
 **📝 Características**
 
-## Subida de imágenes fácil y rápida.
+** Subida de imágenes fácil y rápida. **
 
 Almacenamiento seguro de archivos.
 Visualización de imágenes por ID único o nombre de archivo.
 Sistema de rutas amigables y bien estructuradas.
 
-**🔧 Uso**
+## 🔧 Uso
 
 Accede a la aplicación a través de la siguiente URL:
 
