@@ -6,19 +6,27 @@ Aplicación web desarrollada con Laravel para la gestión y visualización de im
 
 Acceso por ID único
 Acceso por nombre de archivo
+
 ## 🛠️ Tecnologías Utilizadas
 
 Framework: Laravel 11.x
+
 Lenguaje: PHP 8.2
+
 Base de datos: MySQL
+
 Frontend: Blade (Motor de plantillas de Laravel)
+
 Testing: PHPUnit 11.0
+
 ⚙️ Requisitos Previos
 
 PHP >= 8.2
+
 Composer
+
 MySQL/MariaDB
-Node.js y NPM (opcional, solo necesario para gestionar assets)
+
 
 ## 🚀 Instalación
 
