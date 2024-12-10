@@ -95,3 +95,4 @@ upload/show.blade.php: Vista individual
 <img src="./captura/4.png" alt="Imagen">
 <img src="./captura/5.png" alt="Imagen">
 <img src="./captura/6.png" alt="Imagen">
+ .
