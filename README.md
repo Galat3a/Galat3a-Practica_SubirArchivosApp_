@@ -85,7 +85,7 @@ base.blade.php: Main layout template
 upload/create.blade.php: Formulario de subida
 upload/index.blade.php: Lista de archivos subidos
 upload/show.blade.php: Vista individual
-```bash
+```
 
 ## Capturas de pantalla:
 
@@ -95,4 +95,3 @@ upload/show.blade.php: Vista individual
 <img src="./captura/4.png" alt="Imagen">
 <img src="./captura/5.png" alt="Imagen">
 <img src="./captura/6.png" alt="Imagen">
- .
